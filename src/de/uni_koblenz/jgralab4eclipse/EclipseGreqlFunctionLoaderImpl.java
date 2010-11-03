@@ -34,7 +34,7 @@ public class EclipseGreqlFunctionLoaderImpl implements
 			URL fileURL = FileLocator.toFileURL(res);
 			// url.toURI() won't do the trick if there are spaces in the URL...
 			URI uri = new URI(fileURL.toString().replace(" ", "%20"));
-			System.out.println("URI = " + uri);
+			// System.out.println("URI = " + uri);
 			File mydirectory = new File(uri);
 			Greql2FunctionLibrary.instance().registerFunctionsInDirectory(
 					mydirectory.getCanonicalPath());
