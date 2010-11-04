@@ -77,7 +77,7 @@ public class EclipseAdapterImpl implements EclipseAdapter {
 	}
 
 	@Override
-	public String getJGraLabClasspath() {
+	public String getJGraLabJarPath() {
 		URL jgURL = Activator.getContext().getBundle()
 				.getResource("lib/jgralab.jar");
 		try {
