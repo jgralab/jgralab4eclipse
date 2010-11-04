@@ -34,12 +34,12 @@ package de.uni_koblenz.jgralab4eclipse;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import de.uni_koblenz.jgralab.greql2.funlib.Greql2FunctionLibrary;
+import de.uni_koblenz.jgralab.JGraLab;
 
 public class Activator implements BundleActivator {
 
 	static {
-		Greql2FunctionLibrary.eclipseFunctionLoader = new EclipseGreqlFunctionLoaderImpl();
+		JGraLab.eclipseAdapter = new EclipseAdapterImpl();
 	}
 
 	private static BundleContext context;

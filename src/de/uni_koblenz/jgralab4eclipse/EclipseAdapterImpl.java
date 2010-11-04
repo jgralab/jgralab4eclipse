@@ -39,15 +39,14 @@ import java.net.URL;
 
 import org.eclipse.core.runtime.FileLocator;
 
+import de.uni_koblenz.jgralab.EclipseAdapter;
 import de.uni_koblenz.jgralab.greql2.funlib.Greql2FunctionLibrary;
-import de.uni_koblenz.jgralab.greql2.funlib.Greql2FunctionLibrary.EclipseGreqlFunctionLoader;
 
 /**
  * @author Tassilo Horn &lt;horn@uni-koblenz.de&gt;
  * 
  */
-public class EclipseGreqlFunctionLoaderImpl implements
-		EclipseGreqlFunctionLoader {
+public class EclipseAdapterImpl implements EclipseAdapter {
 
 	/*
 	 * (non-Javadoc)
@@ -64,6 +63,10 @@ public class EclipseGreqlFunctionLoaderImpl implements
 			URI uri = new URI(fileURL.toString().replace(" ", "%20"));
 			// System.out.println("URI = " + uri);
 			File mydirectory = new File(uri);
+			// System.out.println("canonical = " +
+			// mydirectory.getCanonicalPath());
+			// System.out.println("absolute = " +
+			// mydirectory.getAbsolutePath());
 			Greql2FunctionLibrary.instance().registerFunctionsInDirectory(
 					mydirectory.getCanonicalPath());
 		} catch (URISyntaxException e) {
@@ -71,5 +74,23 @@ public class EclipseGreqlFunctionLoaderImpl implements
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public String getJGraLabClasspath() {
+		URL jgURL = Activator.getContext().getBundle()
+				.getResource("lib/jgralab.jar");
+		try {
+			URL fileURL = FileLocator.toFileURL(jgURL);
+			URI uri = new URI(fileURL.toString().replace(" ", "%20"));
+			File jgJar = new File(uri);
+			return jgJar.getCanonicalPath();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		}
+		throw new RuntimeException(
+				"Couldn't figure out the path to jgralab.jar.");
 	}
 }
