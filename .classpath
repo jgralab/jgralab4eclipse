@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="jgralab-src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="lib/ist_utilities.jar"/>
-	<classpathentry kind="lib" path="lib/jackson-core-lgpl-1.0.1.jar"/>
-	<classpathentry kind="lib" path="lib/java-getopt-1.0.13.jar"/>
-	<classpathentry kind="lib" path="lib/org.riediger.plist.jar"/>
-	<classpathentry kind="lib" path="lib/commons-cli-1.2.jar"/>
-	<classpathentry kind="lib" path="lib/ant.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jgralab"/>
+	<classpathentry kind="lib" path="/common/lib/ist_utilities/ist_utilities.jar"/>
+	<classpathentry kind="lib" path="/common/lib/apache/commons/cli/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="/common/lib/apache/ant/ant.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
+	<classpathentry kind="lib" path="/jgralab/lib/json/jackson-core-lgpl-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/jgralab/lib/plist/org.riediger.plist.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

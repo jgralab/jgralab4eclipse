@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>jgralab4eclipse</name>
+	<name>de.uni_koblenz.jgralab.eclipseplugin</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -25,4 +25,11 @@
 		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>jgralab-src</name>
+			<type>2</type>
+			<location>/home/horn/uni/repos/jgralab/src</location>
+		</link>
+	</linkedResources>
 </projectDescription>
