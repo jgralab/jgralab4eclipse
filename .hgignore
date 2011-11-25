@@ -1,0 +1,9 @@
+
+syntax: regexp
+^plugins$/de\.uni_koblenz\.jgralab_5\.0\.0\.efraasia\.jar$
+syntax: regexp
+^\.settings$
+syntax: regexp
+^src$
+syntax: regexp
+^bin$
