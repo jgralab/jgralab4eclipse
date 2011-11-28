@@ -1,20 +1,14 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: JGraLab4Eclipse
+Bundle-Name: JGraLab
 Bundle-SymbolicName: de.uni_koblenz.jgralab;singleton:=true
-Bundle-Version: 5.0.0.efraasia
+Bundle-Version: 5.0.0.Efraasia_4147_cf4dab415330
 Bundle-Activator: de.uni_koblenz.jgralab.plugin.Activator
 Bundle-Vendor: Institute for Software Technology, University of Koblenz-Landau
 Require-Bundle: org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: .
-Export-Package: de.uni_koblenz.ist.utilities.csvreader,
- de.uni_koblenz.ist.utilities.gui,
- de.uni_koblenz.ist.utilities.license_header,
- de.uni_koblenz.ist.utilities.option_handler,
- de.uni_koblenz.ist.utilities.revision_task,
- de.uni_koblenz.ist.utilities.xml,
- de.uni_koblenz.jgralab,
+Export-Package: de.uni_koblenz.jgralab,
  de.uni_koblenz.jgralab.algolib.algorithms,
  de.uni_koblenz.jgralab.algolib.algorithms.reachability,
  de.uni_koblenz.jgralab.algolib.algorithms.search,
@@ -78,11 +72,14 @@ Export-Package: de.uni_koblenz.ist.utilities.csvreader,
  de.uni_koblenz.jgralab.impl.std,
  de.uni_koblenz.jgralab.impl.trans,
  de.uni_koblenz.jgralab.jniserver,
+ de.uni_koblenz.jgralab.plugin,
  de.uni_koblenz.jgralab.schema,
  de.uni_koblenz.jgralab.schema.exception,
  de.uni_koblenz.jgralab.schema.impl,
+ de.uni_koblenz.jgralab.schema.impl.compilation,
  de.uni_koblenz.jgralab.trans,
  de.uni_koblenz.jgralab.utilities,
+ de.uni_koblenz.jgralab.utilities.ant,
  de.uni_koblenz.jgralab.utilities.common,
  de.uni_koblenz.jgralab.utilities.common.json,
  de.uni_koblenz.jgralab.utilities.converter,
@@ -112,15 +109,5 @@ Export-Package: de.uni_koblenz.ist.utilities.csvreader,
  de.uni_koblenz.jgralab.utilities.tgschema2java,
  de.uni_koblenz.jgralab.utilities.tgtree,
  de.uni_koblenz.jgralab.utilities.xml,
- gnu.getopt,
- org.apache.commons.cli,
- org.codehaus.jackson,
- org.codehaus.jackson.annotate,
- org.codehaus.jackson.impl,
- org.codehaus.jackson.io,
- org.codehaus.jackson.sym,
- org.codehaus.jackson.type,
- org.codehaus.jackson.util,
- org.pcollections,
- org.riediger.plist
+ org.pcollections
 Bundle-ActivationPolicy: lazy
