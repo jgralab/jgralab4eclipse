@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: JGraLab
 Bundle-SymbolicName: de.uni_koblenz.jgralab;singleton:=true
-Bundle-Version: 5.0.0.Efraasia_4147_cf4dab415330
+Bundle-Version: 5.0.4147.Efraasia
 Bundle-Activator: de.uni_koblenz.jgralab.plugin.Activator
 Bundle-Vendor: Institute for Software Technology, University of Koblenz-Landau
 Require-Bundle: org.eclipse.core.runtime

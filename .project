@@ -25,11 +25,4 @@
 		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>jgralab-src</name>
-			<type>2</type>
-			<location>/home/horn/uni/repos/jgralab/src</location>
-		</link>
-	</linkedResources>
 </projectDescription>
