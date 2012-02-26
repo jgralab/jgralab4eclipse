@@ -9,6 +9,5 @@
 	<classpathentry kind="lib" path="/common/lib/apache/ant/ant.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
 	<classpathentry kind="lib" path="/jgralab/lib/plist/org.riediger.plist.jar"/>
-	<classpathentry kind="lib" path="lib/jackson-core-lgpl-1.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
