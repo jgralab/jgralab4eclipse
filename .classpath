@@ -3,11 +3,10 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/jgralab"/>
 	<classpathentry kind="lib" path="/common/lib/ist_utilities/ist_utilities.jar"/>
 	<classpathentry kind="lib" path="/common/lib/apache/commons/cli/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="/common/lib/apache/ant/ant.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
-	<classpathentry kind="lib" path="/jgralab/lib/plist/org.riediger.plist.jar"/>
+	<classpathentry kind="lib" path="lib/org.riediger.plist.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
