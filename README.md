@@ -12,6 +12,12 @@ This is an Eclipse project to deploy JGraLab as an Eclipse plugin.
 
 4. Import this project into Eclipse.
 
+5. Make sure that the original jgralab project is not in your workspace.
+   It can be, but must be closed! Otherwise, you will end up with the
+   `META-INF` folder being detected twice and the plugin appears redundantly
+   in the run configuration. The result may be further issues, such as
+   `Activator` class not being found.
+
 Note, that if you change any java files, those are actually changed inside your
 jgralab working copy, so you have to commit them there.
 
