@@ -24,7 +24,7 @@ jgralab working copy, so you have to commit them there.
 
 ## License
 
-Copyright (C) 2007-2013 The JGraLab Team <ist@uni-koblenz.de>
+Copyright (C) 2006-2014 The JGraLab Team <ist@uni-koblenz.de>
 
 Distributed under the General Public License (Version 3), with the following
 additional grant:
